@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HengQinDianShangUITest" parallel="tests" thread-count="3">
+    <test name="weidian" preserve-order="true" >
+        <parameter name="browser" value="weidian"/>
+      <classes>
+          <class name="com.hengqin.cases.DemoTest"/>
+      </classes>
+    </test>
+<!--    <test name="guanwang" preserve-order="true" >-->
+<!--        <parameter name="browser" value="guanwang"/>-->
+<!--        <classes>-->
+<!--            <class name="com.hengqin.cases.guanwang.YouaibaoDingqiTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="guanwei" preserve-order="true" >-->
+<!--        <parameter name="browser" value="guanwei"/>-->
+<!--        <classes>-->
+<!--            <class name="com.hengqin.cases.guanwei.ATest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
