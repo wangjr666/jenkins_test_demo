@@ -30,6 +30,9 @@ public class InitDriver {
 //			capabilities.setCapability("pageLoadStrategy","none");
 			//设置chrome下载路径
 			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--headless");
 			String downloadPath ="/Users/Wangjr/Desktop/down";
 			HashMap<String,Object> hm = new  HashMap();
 			hm.put("download.default_directory",downloadPath);
